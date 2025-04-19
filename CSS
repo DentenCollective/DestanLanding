@@ -1,0 +1,139 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme toggle button */
+#toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #58a6ff;
+}
+
+body.light h1 {
+  color: #0058cc;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #8b949e;
+  margin-bottom: 2rem;
+}
+
+body.light .subtitle {
+  color: #555;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects li {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 1rem;
+}
+
+body.light .projects li {
+  border-color: #ddd;
+}
+
+.projects h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #58a6ff;
+}
+
+body.light .projects h3 {
+  color: #0058cc;
+}
+
+.projects p {
+  margin-bottom: 0.4rem;
+  color: #8b949e;
+}
+
+body.light .projects p {
+  color: #444;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body.light a {
+  color: #0058cc;
+}
+
+.status {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  background-color: #21262d;
+  color: #8b949e;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+}
+
+body.light .status {
+  background-color: #f0f0f0;
+  color: #333;
+  border-color: #ccc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: #8b949e;
+}
+
+body.light footer {
+  color: #555;
+}
