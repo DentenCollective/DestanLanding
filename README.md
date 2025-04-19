@@ -4,7 +4,7 @@ This is my personal developer portfolio website, built with simple HTML, CSS, an
 
 ## 🔗 Live Site
 
-You can view the live site here: [https://yourusername.github.io/destan-karakas](https://yourusername.github.io/destan-karakas)
+You can view the live site here: [https://dentencollective.github.io/DestanLanding/](https://dentencollective.github.io/DestanLanding/)
 
 *(Replace this with your actual GitHub Pages URL once deployed.)*
 
