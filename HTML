@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destan Karakas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="toggle-theme">Toggle Theme</button>
+
+  <main>
+    <h1>Destan Karakas</h1>
+    <p class="subtitle">iOS Developer • Builder of small, useful things</p>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>QuietNote</h3>
+          <p>A voice memo app with iCloud sync, biometric auth, waveform display, and reminder notifications.</p>
+          <a href="https://github.com/DentenCollective/VoiceMemoApp" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+          <h3>PingTag</h3>
+          <p>A local-only offline tag game using NFC/Bluetooth, with real-world dares and social gameplay.</p>
+          <span class="status in-progress">In Progress</span>
+        </li>
+        <li>
+          <h3>BarKeep</h3>
+          <p>A rap song app that fetches lyrics, lets users choose a bar, and helps them craft their own verses.</p>
+          <span class="status in-progress">In Progress</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:destankarakascali@gmail.com ">destankarakascali@gmail.com </a></p>
+    </footer>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-theme");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+    });
+  </script>
+</body>
+</html>
